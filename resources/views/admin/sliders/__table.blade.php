@@ -40,6 +40,7 @@
                       <th>
                       <a class="btn btn-primary" href="{{ route('sliders.edit',$slider->id)}}">Edit</a>
                         <a class="btn btn-danger" href="#">Delete</a>
+                        {{-- {{ route('sliders.delete'), $slider->id}} --}}
                       </th>
                     </tr>
                      @endforeach

@@ -103,11 +103,8 @@ class SlidersController extends Controller
      */
     public function destroy($id)
     {
-        $slider = SliderDB::delete($id);
-        dd('$slider');
-        $image_path = "/storage/$slider";  // Value is not URL but directory file path
-        if(File::exists($image_path)) {
-            File::delete($image_path);
-        }
+        dd($id);
+       $slider = Slider::destroy($id);
+       
     }
 }
